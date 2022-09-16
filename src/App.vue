@@ -40,7 +40,7 @@
         </div>
       </div>
     </div>
-    <div class="image-container">
+    <!-- <div class="image-container">
       <el-row :gutter="30" style="padding:0 20px; margin: 20px 0;">
         <el-col :span="6"  v-for="(item, index) in imageArr1" class="image-item-card-col" :key="index">
           <el-card :body-style="{ padding: '0px' }" class="image-item-card">
@@ -57,7 +57,7 @@
           </el-card>
         </el-col>
       </el-row>
-    </div>
+    </div> -->
     <div class="introduction" id="yichongre">
       <div class="section-title">
         <div class="title-words">Z世代的异宠热</div>
@@ -84,8 +84,11 @@
           </div>
         </div>
       </div>
+      <div class="fixedimage">
+        <img :src="fixedimageChoose" alt="">
+      </div>
     </div>
-    <div class="image-container">
+    <!-- <div class="image-container">
       <el-row :gutter="30" style="padding:0 20px; margin: 20px 0;">
         <el-col :span="6"  v-for="(item, index) in imageArr3" class="image-item-card-col" :key="index">
           <el-card :body-style="{ padding: '0px' }" class="image-item-card">
@@ -102,7 +105,7 @@
           </el-card>
         </el-col>
       </el-row>
-    </div>
+    </div> -->
     <div class="introduction" id="kunjing">
       <div class="section-title">
         <div class="title-words">陷入“孤岛”困境</div>
@@ -288,60 +291,81 @@
 <script>
 import option from './dataConfig/chart1.js'
 import tableChartVue from './components/tableChart.vue'
-
+// let scrollTop = 0
+// window.addEventListener('scroll', function (e) {
+//   scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+// })
 export default {
   name: 'App',
   components: {
     tableChartVue
   },
+  mounted () {
+    window.addEventListener('scroll', this.windowScroll) //监听页面滚动
+  },
+  destroyed() {
+    window.removeEventListener("scroll", this.windowScroll);//销毁滚动事件
+  },
   data() {
     return {
       mis: 'liaojie',
       value: '',
-      imageArr1:[
-        require('./assets/imagefolder/division1/1.jpg'),
-        require('./assets/imagefolder/division1/2.jpg'),
-        require('./assets/imagefolder/division1/3.png'),
-        require('./assets/imagefolder/division1/4.jpg')
-      ],
-      imageArr2: [
-        require('./assets/imagefolder/division1/5.jpg'),
-        require('./assets/imagefolder/division1/6.jpeg'),
-        require('./assets/imagefolder/division1/8.jpeg'),
-        require('./assets/imagefolder/division1/9.jpg')
-      ],
-      imageArr3: [
-        require('./assets/imagefolder/division2/IMG_8839.jpg'),
-        require('./assets/imagefolder/division2/IMG_8840.jpg'),
-        require('./assets/imagefolder/division2/IMG_8842.jpg'),
-        require('./assets/imagefolder/division2/IMG_8843.jpg'),
-      ],
-      imageArr4: [
-        require('./assets/imagefolder/division2/IMG_8845.jpg'),
-        require('./assets/imagefolder/division2/IMG_8847.jpg'),
-        require('./assets/imagefolder/division2/IMG_8848.jpg'),
-        require('./assets/imagefolder/division2/IMG_8849.jpeg')
-      ],
-      imageArr5: [
-        require('./assets/imagefolder/division3/1.jpeg'),
-        require('./assets/imagefolder/division3/2.jpeg'),
-        require('./assets/imagefolder/division3/3.jpeg'),
-        require('./assets/imagefolder/division3/4.jpeg')
-      ],
-      imageArr6: [
-        require('./assets/imagefolder/division3/5.jpeg'),
-        require('./assets/imagefolder/division3/6.jpeg'),
-        require('./assets/imagefolder/division3/7.jpeg'),
-        require('./assets/imagefolder/division3/8.jpeg')
-      ],
+      fixedimageChoose: require('./assets/BingWallpaper.jpg'),
+      image2: require('./assets/zhuomian2.jpg'),
+      image1: require('./assets/BingWallpaper.jpg'),
+      // fixedimage: [require('./assets/BingWallPaper.jpg'), require('./assets/zhuomian2.jpeg')],
+      // imageArr1:[
+      //   require('./assets/imagefolder/division1/1.jpg'),
+      //   require('./assets/imagefolder/division1/2.jpg'),
+      //   require('./assets/imagefolder/division1/3.png'),
+      //   require('./assets/imagefolder/division1/4.jpg')
+      // ],
+      // imageArr2: [
+      //   require('./assets/imagefolder/division1/5.jpg'),
+      //   require('./assets/imagefolder/division1/6.jpeg'),
+      //   require('./assets/imagefolder/division1/8.jpeg'),
+      //   require('./assets/imagefolder/division1/9.jpg')
+      // ],
+      // imageArr3: [
+      //   require('./assets/imagefolder/division2/IMG_8839.jpg'),
+      //   require('./assets/imagefolder/division2/IMG_8840.jpg'),
+      //   require('./assets/imagefolder/division2/IMG_8842.jpg'),
+      //   require('./assets/imagefolder/division2/IMG_8843.jpg'),
+      // ],
+      // imageArr4: [
+      //   require('./assets/imagefolder/division2/IMG_8845.jpg'),
+      //   require('./assets/imagefolder/division2/IMG_8847.jpg'),
+      //   require('./assets/imagefolder/division2/IMG_8848.jpg'),
+      //   require('./assets/imagefolder/division2/IMG_8849.jpeg')
+      // ],
+      // imageArr5: [
+      //   require('./assets/imagefolder/division3/1.jpeg'),
+      //   require('./assets/imagefolder/division3/2.jpeg'),
+      //   require('./assets/imagefolder/division3/3.jpeg'),
+      //   require('./assets/imagefolder/division3/4.jpeg')
+      // ],
+      // imageArr6: [
+      //   require('./assets/imagefolder/division3/5.jpeg'),
+      //   require('./assets/imagefolder/division3/6.jpeg'),
+      //   require('./assets/imagefolder/division3/7.jpeg'),
+      //   require('./assets/imagefolder/division3/8.jpeg')
+      // ],
       chartData: option
     }
   },
-  method: {
+  methods: {
     getMis() {
       console.log(this.mis)
       console.log("woshinibababa")
-    }
+    },
+    windowScroll() {
+      let scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+      if (scrollTop > 3800) {
+        this.fixedimageChoose = this.image2
+      }else {
+        this.fixedimageChoose = this.image1
+      }
+    },
   }
 }
 </script>
