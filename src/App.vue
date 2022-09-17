@@ -1,5 +1,8 @@
 <template>
   <div id="app" class="page-component__scroll">
+    <div class="fixedimage">
+      <img :src="fixedimageChoose" alt="">
+    </div>
     <div class="index">
       <div class="header">
         <a href="#index">首页</a>
@@ -10,19 +13,19 @@
         <a href="#weisheng">尾声</a>
       </div>
       <div class="opcity-container">
-        <div class="fix-nail"></div>
+        <!-- <div class="fix-nail"></div> -->
         <div class="title-words title-words1">
           <div>异宠热袭来: </div>
           <div>真正的爱是生命对生命的</div>
         </div>
       </div>
     </div>
-    <div class="introduction" id="yinyan">
+    <div class="introduction-head" id="yinyan">
       <div class="section-title">
         <div class="title-words">引言</div>
         <div class="title-border"></div>
         <div class="opcity-container-words">
-          <div class="fix-nail"></div>
+          <!-- <div class="fix-nail"></div> -->
           <div class="introduction-words">
             从王校长的柯尔鸭、羊驼萌翻网友，到今天社交网站大火的暹罗鳄饲养日常，
             <span class="introduction-special-words">宠物经济疯狂, Z世代下的异宠热正急剧升温</span>, 人类已不止于弧化饲养猫狗, 而是在 “另类”宠
@@ -65,29 +68,33 @@
         <div class="explain-words">
           <span>异宠与异宠主画像</span>
         </div>
-        <div class="opcity-container-words">
-          <div class="fix-nail"></div>
-          <div class="introduction-words">
-            异宠一般指另类宠物或异域宠物（本篇所研究不包括植物），其中包含另类水族动物、小型哺乳动物、爬行动物、昆虫、节肢动物等。历史数据表明，一些文化中，饲养异宠已有几千年历史。
-            <span class="introduction-special-words">早在公元前4000年，</span>
-            古埃及人就饲养鸟类作为伴侣动物；最早有关金鱼选育作为观赏的记录可追溯至
-            <span class="introduction-special-words">中国宋代。</span>
-            20世纪以来，异宠大受欢迎，异宠贸易迅速增长，中国养宠物的家庭从
-            <span class="introduction-special-words">2017年5912万至2021年6844万</span>
-            其中异宠饲养率也从
-            <span class="introduction-special-words">35.7%增至53%，</span>
-            这不断证明人类与动物远距离接触的壁垒已然被打破，在与更多种类动物的相处过程中，人类不断触及新鲜刺激的领域。但异宠主在宠物主中仍占少数，其中
-            <span class="introduction-special-words">90后、00后</span>
-            饲养者为主力军共占<span class="introduction-special-words">84.6%,</span>家庭月收入在5000—10000元有30.8%,
-            <span class="introduction-special-words">男性</span>的比率<span class="introduction-special-words">超过半数</span>且集中分布在
-            <span class="introduction-special-words">一线城市以及新一线城市，</span>这表明异宠主仍是小众群体。
-          </div>
-        </div>
-      </div>
-      <div class="fixedimage">
-        <img :src="fixedimageChoose" alt="">
       </div>
     </div>
+    <div class="words-content-container">
+      <div class="opcity-container-words">
+        <!-- <div class="fix-nail"></div> -->
+        <div class="introduction-words">
+          异宠一般指另类宠物或异域宠物（本篇所研究不包括植物），其中包含另类水族动物、小型哺乳动物、爬行动物、昆虫、节肢动物等。历史数据表明，一些文化中，饲养异宠已有几千年历史。
+          <span class="introduction-special-words">早在公元前4000年，</span>
+          古埃及人就饲养鸟类作为伴侣动物；最早有关金鱼选育作为观赏的记录可追溯至
+          <span class="introduction-special-words">中国宋代。</span>
+          20世纪以来，异宠大受欢迎，异宠贸易迅速增长，中国养宠物的家庭从
+          <span class="introduction-special-words">2017年5912万至2021年6844万</span>
+          其中异宠饲养率也从
+          <span class="introduction-special-words">35.7%增至53%，</span>
+          这不断证明人类与动物远距离接触的壁垒已然被打破，在与更多种类动物的相处过程中，人类不断触及新鲜刺激的领域。但异宠主在宠物主中仍占少数，其中
+          <span class="introduction-special-words">90后、00后</span>
+          饲养者为主力军共占<span class="introduction-special-words">84.6%,</span>家庭月收入在5000—10000元有30.8%,
+          <span class="introduction-special-words">男性</span>的比率<span
+            class="introduction-special-words">超过半数</span>且集中分布在
+          <span class="introduction-special-words">一线城市以及新一线城市，</span>这表明异宠主仍是小众群体。
+        </div>
+      </div>
+    </div>
+    <tableChartVue :data="chartData.option4" :chartId="'option3'" :title="'2017-2021年各异宠购买比例'"
+      :footer="'[数据来源：xxxxxxx]'" :height="500" :width="90"></tableChartVue>
+
+
     <!-- <div class="image-container">
       <el-row :gutter="30" style="padding:0 20px; margin: 20px 0;">
         <el-col :span="6"  v-for="(item, index) in imageArr3" class="image-item-card-col" :key="index">
@@ -111,27 +118,32 @@
         <div class="title-words">陷入“孤岛”困境</div>
         <div class="title-border"></div>
         <div class="explain-words">
-          <span>“我们异宠主人数较少，宠物生活环境装造很复杂，每次带宠物出行、就医非常不便，也遭受过很多人异样的眼光”</span>
+          <span>“我们异宠主人数较少，宠物生活环境装造很复杂，每次带<br>宠物出行、就医非常不便，也遭受过很多人异样的眼光”</span>
         </div>
-        <div class="opcity-container-words">
-          <div class="fix-nail"></div>
-          <div class="introduction-words">
-            浓厚的猎奇心理是青年的标志，这也导致异宠饲养主年龄趋于低龄。在鼓励他们通过饲养异宠学习知识的同时，还应当谨慎网络和各大平台错误虚假信息的误导。数据显示异宠在平台的
-            <span class="introduction-special-words">热度占5%—15%。</span>
-            人工搜集各平台<span class="introduction-special-words">185位博主</span>发现，
-            <span class="introduction-special-words">仅有42位发布内容具有科普性，</span>
-            数据表明有<span class="introduction-special-words">62.5%</span>的异宠、宠物博主布视频的真实目的为<span class="introduction-special-words">变现</span>。
-            同时各大销售平台售卖异宠的价格在<span class="introduction-special-words">一元至百万元</span>之间并且没有对购买人群有年龄的限制与监督。网络传播有关异宠的内容鱼龙混杂，
-            <span class="introduction-special-words">未成年人好奇心使然尚未对购买的宠物有详细的了解，47%</span>的异宠初次购买者几乎没有花时间研究所购买的动物，
-            而我国仅有<span class="introduction-special-words">52%</span>的饲养者意识到自己饲养的是异宠。
-            <span class="introduction-special-words">异宠主囿于人数劣势，相关信息少，被迫陷入了“孤岛”困境。</span>
-          </div>
+
+      </div>
+    </div>
+    <div class="words-content-container">
+      <div class="opcity-container-words">
+        <!-- <div class="fix-nail"></div> -->
+        <div class="introduction-words">
+          浓厚的猎奇心理是青年的标志，这也导致异宠饲养主年龄趋于低龄。在鼓励他们通过饲养异宠学习知识的同时，还应当谨慎网络和各大平台错误虚假信息的误导。数据显示异宠在平台的
+          <span class="introduction-special-words">热度占5%—15%。</span>
+          人工搜集各平台<span class="introduction-special-words">185位博主</span>发现，
+          <span class="introduction-special-words">仅有42位发布内容具有科普性，</span>
+          数据表明有<span class="introduction-special-words">62.5%</span>的异宠、宠物博主布视频的真实目的为<span
+            class="introduction-special-words">变现</span>。
+          同时各大销售平台售卖异宠的价格在<span class="introduction-special-words">一元至百万元</span>之间并且没有对购买人群有年龄的限制与监督。网络传播有关异宠的内容鱼龙混杂，
+          <span class="introduction-special-words">未成年人好奇心使然尚未对购买的宠物有详细的了解，47%</span>的异宠初次购买者几乎没有花时间研究所购买的动物，
+          而我国仅有<span class="introduction-special-words">52%</span>的饲养者意识到自己饲养的是异宠。
+          <span class="introduction-special-words">异宠主囿于人数劣势，相关信息少，被迫陷入了“孤岛”困境。</span>
         </div>
       </div>
     </div>
-    <div style="width: 100%; position: relative; background-color: #cfd6c5;">
+
+    <div class="words-content-container">
       <div class="opcity-container-words">
-        <div class="fix-nail"></div>
+        <!-- <div class="fix-nail"></div> -->
         <div class="introduction-words">
           《2021年宠物医疗行业白皮书》数据显示宠物
           <span class="introduction-special-words">总病例142624例，异宠已达到1673例</span>。异宠体型小，但喂养的食粮并不便宜，价格普遍在
@@ -144,9 +156,9 @@
         </div>
       </div>
     </div>
-    <div style="width: 100%; position: relative; background-color: #cfd6c5;">
+    <div class="words-content-container">
       <div class="opcity-container-words">
-        <div class="fix-nail"></div>
+        <!-- <div class="fix-nail"></div> -->
         <div class="introduction-words">
           《2021年宠物医疗行业白皮书》数据显示宠物
           <span class="introduction-special-words">总病例142624例，异宠已达到1673例</span>。异宠体型小，但喂养的食粮并不便宜，价格普遍在
@@ -159,9 +171,9 @@
         </div>
       </div>
     </div>
-    <div style="width: 100%; position: relative; background-color: #cfd6c5;">
+    <div class="words-content-container">
       <div class="opcity-container-words">
-        <div class="fix-nail"></div>
+        <!-- <div class="fix-nail"></div> -->
         <div class="introduction-words">
           《2021年宠物医疗行业白皮书》数据显示宠物
           <span class="introduction-special-words">总病例142624例，异宠已达到1673例</span>。异宠体型小，但喂养的食粮并不便宜，价格普遍在
@@ -175,10 +187,15 @@
       </div>
     </div>
     <!--  -->
-    <tableChartVue :data="chartData.option1"  :chartId="'option1'" :title="'2017-2021年各异宠购买比例'" :footer="'[数据来源：xxxxxxx]'" :height="500" :width="90"></tableChartVue>
+    <tableChartVue id="id1" :data="chartData.option1" :isMounted="mountedChart.option1" :chartId="'option1'"
+      :title="'2017-2021年各异宠购买比例'" :footer="'[数据来源：xxxxxxx]'" :height="500" :width="90"></tableChartVue>
     <!--  -->
     <!--  -->
-    <tableChartVue :data="chartData.option2" :chartId="'option2'" :title="'2017-2021年各异宠购买比例'" :footer="'[数据来源：xxxxxxx]'" :height="500" :width="90"></tableChartVue>
+    <tableChartVue :data="chartData.option2" :chartId="'option2'" :title="'2017-2021年各异宠购买比例'"
+      :footer="'[数据来源：xxxxxxx]'" :height="500" :width="90"></tableChartVue>
+    <tableChartVue :data="chartData.option3" :chartId="'option3'" :title="'2017-2021年各异宠购买比例'"
+      :footer="'[数据来源：xxxxxxx]'" :height="500" :width="90"></tableChartVue>
+
     <!--  -->
     <div class="introduction" id="shangtong">
       <div class="section-title">
@@ -190,64 +207,72 @@
         <div class="explain-words">
           <span>“根据统计，当前野生动物网络非法贸易已排全世界网络犯罪的第五位”</span>
         </div>
-        <div class="opcity-container-words">
-          <div class="fix-nail"></div>
-          <div class="introduction-words">
-            异宠市场的迅速崛起可能源于人类的猎奇心理，个性化心里的需求，养成的满足感或者来自于
-            <span class="introduction-special-words">人类原始的征服欲望</span>。
-            而异宠饲养揭开了人类与其他物种美好共处的遮羞布，血淋淋的真相便是鲜少有人会去真的热爱尊重，大多则是被名誉利益诱引。
-            褪去浮华后总会有这样一个问题：在金钱的驱使下会不会有更多的物种成为“异类”，成为人类驯化的宠物，成为人类身份的象征？<br>
-            <div style="width: 100%;text-indent: 60px;">
-              地球的年龄是46亿年，而人类文明不过300万年，在漫长的40多亿年中，一直有其他生灵生存于此，我们并不是主人只是地球的居客。
-              作为当今最智慧的物种，我们目前能做的仅是去敦促异宠饲养相关法律准则的完善；去不断了解，只有充分的了解，
-              丰富的知识基础我们才能客观冷静，主动敞开爱意的双臂；去包容合法的异宠圈的存在，也包容部分人类对其的恐惧与厌恶；
-              去尊重异宠主的热爱，<span class="introduction-special-words">更重要的是尊重异宠，尊重生命本身</span>。。
-            </div>
-            <div style="width: 100%;text-indent: 60px;">
-              人类社会应当是有规则的，不是随性而为，不是暴力、背叛、屠戮，我们要维护一条道德的底线，那条底线是对生命的尊重与敬畏。
-              <span class="introduction-special-words">我们所想的乌托邦世界是：宇宙中任何物种之间都不存在饲养关系，每一种生物都能和谐自由地享受生命，
-              真正的爱，是生命对生命的。即使道途漫长且不可到达，我们仍需努力地无限趋近于此</span>。
-            </div>     
-            
+
+      </div>
+    </div>
+    <div class="words-content-container">
+      <div class="opcity-container-words">
+        <!-- <div class="fix-nail"></div> -->
+        <div class="introduction-words">
+          异宠市场的迅速崛起可能源于人类的猎奇心理，个性化心里的需求，养成的满足感或者来自于
+          <span class="introduction-special-words">人类原始的征服欲望</span>。
+          而异宠饲养揭开了人类与其他物种美好共处的遮羞布，血淋淋的真相便是鲜少有人会去真的热爱尊重，大多则是被名誉利益诱引。
+          褪去浮华后总会有这样一个问题：在金钱的驱使下会不会有更多的物种成为“异类”，成为人类驯化的宠物，成为人类身份的象征？<br>
+          <div style="width: 100%;text-indent: 60px;">
+            地球的年龄是46亿年，而人类文明不过300万年，在漫长的40多亿年中，一直有其他生灵生存于此，我们并不是主人只是地球的居客。
+            作为当今最智慧的物种，我们目前能做的仅是去敦促异宠饲养相关法律准则的完善；去不断了解，只有充分的了解，
+            丰富的知识基础我们才能客观冷静，主动敞开爱意的双臂；去包容合法的异宠圈的存在，也包容部分人类对其的恐惧与厌恶；
+            去尊重异宠主的热爱，<span class="introduction-special-words">更重要的是尊重异宠，尊重生命本身</span>。。
           </div>
+          <div style="width: 100%;text-indent: 60px;">
+            人类社会应当是有规则的，不是随性而为，不是暴力、背叛、屠戮，我们要维护一条道德的底线，那条底线是对生命的尊重与敬畏。
+            <span class="introduction-special-words">我们所想的乌托邦世界是：宇宙中任何物种之间都不存在饲养关系，每一种生物都能和谐自由地享受生命，
+              真正的爱，是生命对生命的。即使道途漫长且不可到达，我们仍需努力地无限趋近于此</span>。
+          </div>
+
         </div>
       </div>
     </div>
-    <div class="introduction" id="weisheng">
+
+    <div class="introduction-header-footer" id="weisheng">
       <div class="section-title">
         <div class="title-words">尾声</div>
         <div class="title-border"></div>
         <div class="explain-words">
           <span>客观、了解、包容、尊重</span>
         </div>
-        <div class="opcity-container-words">
-          <div class="fix-nail"></div>
-          <div class="introduction-words">
-            异宠市场的迅速崛起可能源于人类的猎奇心理，个性化心里的需求，养成的满足感或者来自于
-            <span class="introduction-special-words">人类原始的征服欲望</span>。
-            而异宠饲养揭开了人类与其他物种美好共处的遮羞布，血淋淋的真相便是鲜少有人会去真的热爱尊重，大多则是被名誉利益诱引。
-            褪去浮华后总会有这样一个问题：在金钱的驱使下会不会有更多的物种成为“异类”，成为人类驯化的宠物，成为人类身份的象征？<br>
-            <div style="width: 100%;text-indent: 60px;">
-              地球的年龄是46亿年，而人类文明不过300万年，在漫长的40多亿年中，一直有其他生灵生存于此，我们并不是主人只是地球的居客。
-              作为当今最智慧的物种，我们目前能做的仅是去敦促异宠饲养相关法律准则的完善；去不断了解，只有充分的了解，
-              丰富的知识基础我们才能客观冷静，主动敞开爱意的双臂；去包容合法的异宠圈的存在，也包容部分人类对其的恐惧与厌恶；
-              去尊重异宠主的热爱，<span class="introduction-special-words">更重要的是尊重异宠，尊重生命本身</span>。。
-            </div>
-            <div style="width: 100%;text-indent: 60px;">
-              人类社会应当是有规则的，不是随性而为，不是暴力、背叛、屠戮，我们要维护一条道德的底线，那条底线是对生命的尊重与敬畏。
-              <span class="introduction-special-words">我们所想的乌托邦世界是：宇宙中任何物种之间都不存在饲养关系，每一种生物都能和谐自由地享受生命，
-              真正的爱，是生命对生命的。即使道途漫长且不可到达，我们仍需努力地无限趋近于此</span>。
-            </div>     
-            
+
+      </div>
+    </div>
+    <div class="words-content-container">
+      <div class="opcity-container-words">
+        <!-- <div class="fix-nail"></div> -->
+        <div class="introduction-words">
+          异宠市场的迅速崛起可能源于人类的猎奇心理，个性化心里的需求，养成的满足感或者来自于
+          <span class="introduction-special-words">人类原始的征服欲望</span>。
+          而异宠饲养揭开了人类与其他物种美好共处的遮羞布，血淋淋的真相便是鲜少有人会去真的热爱尊重，大多则是被名誉利益诱引。
+          褪去浮华后总会有这样一个问题：在金钱的驱使下会不会有更多的物种成为“异类”，成为人类驯化的宠物，成为人类身份的象征？<br>
+          <div style="width: 100%;text-indent: 60px;">
+            地球的年龄是46亿年，而人类文明不过300万年，在漫长的40多亿年中，一直有其他生灵生存于此，我们并不是主人只是地球的居客。
+            作为当今最智慧的物种，我们目前能做的仅是去敦促异宠饲养相关法律准则的完善；去不断了解，只有充分的了解，
+            丰富的知识基础我们才能客观冷静，主动敞开爱意的双臂；去包容合法的异宠圈的存在，也包容部分人类对其的恐惧与厌恶；
+            去尊重异宠主的热爱，<span class="introduction-special-words">更重要的是尊重异宠，尊重生命本身</span>。。
           </div>
+          <div style="width: 100%;text-indent: 60px;">
+            人类社会应当是有规则的，不是随性而为，不是暴力、背叛、屠戮，我们要维护一条道德的底线，那条底线是对生命的尊重与敬畏。
+            <span class="introduction-special-words">我们所想的乌托邦世界是：宇宙中任何物种之间都不存在饲养关系，每一种生物都能和谐自由地享受生命，
+              真正的爱，是生命对生命的。即使道途漫长且不可到达，我们仍需努力地无限趋近于此</span>。
+          </div>
+
         </div>
       </div>
     </div>
+
     <div class="footer">
       <div class="footer-container">
-        <div><span>指导老师：</span>  伍晓芸</div>
-        <div><span>编辑制作：</span>  赵晨彤   李鑫哲   王玥琪</div>
-        <div><span>特别感谢：</span>  廖杰（网页制作指导）</div>
+        <div><span>指导老师：</span> 伍晓芸</div>
+        <div><span>编辑制作：</span> 赵晨彤 李鑫哲 王玥琪</div>
+        <div><span>特别感谢：</span> 廖杰（网页制作指导）</div>
       </div>
       <div class="division"></div>
       <div class="reference">
@@ -265,14 +290,13 @@
           <li>【10】《咖啡馆“异宠店员”上线》</li>
           <li>【11】《异宠兽医：“病宠”千奇百怪，治疗无分贵贱》</li>
           <li>部分数据来源互联网、公众号中国宠物行业观察、中国裁判文书网人工搜集整合</li>
-          <li>照片来自网络，如有侵权联系  15536826902</li>
+          <li>照片来自网络，如有侵权联系 15536826902</li>
         </ul>
       </div>
     </div>
     <!-- 回到顶部 -->
-    <el-backtop target=".page-component__scroll">
-      <div
-        style="{
+    <el-backtop>
+      <div style="{
           height: 100%;
           width: 100%;
           background-color: #33412c;
@@ -282,8 +306,7 @@
           line-height: 40px;
           color: #fff;
           font-size:20rpx;
-        }"
-      >▲</div>
+        }">▲</div>
     </el-backtop>
   </div>
 </template>
@@ -295,12 +318,19 @@ import tableChartVue from './components/tableChart.vue'
 // window.addEventListener('scroll', function (e) {
 //   scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
 // })
+const mountArr = () => {
+  const res = []
+  for(let i = 0;i < 35;i++) {
+    res.push(i)
+  }
+  return res
+}
 export default {
   name: 'App',
   components: {
     tableChartVue
   },
-  mounted () {
+  mounted() {
     window.addEventListener('scroll', this.windowScroll) //监听页面滚动
   },
   destroyed() {
@@ -310,9 +340,14 @@ export default {
     return {
       mis: 'liaojie',
       value: '',
-      fixedimageChoose: require('./assets/BingWallpaper.jpg'),
-      image2: require('./assets/zhuomian2.jpg'),
-      image1: require('./assets/BingWallpaper.jpg'),
+      fixedimageChoose: require('./assets/1.jpeg'),
+      image1: require('./assets/1.jpeg'),
+      image2: require('./assets/2.jpeg'),
+      image3: require('./assets/3.jpeg'),
+      mountedChart: {
+        option1: false
+      },
+      isMoutedArr: mountArr(),
       // fixedimage: [require('./assets/BingWallPaper.jpg'), require('./assets/zhuomian2.jpeg')],
       // imageArr1:[
       //   require('./assets/imagefolder/division1/1.jpg'),
@@ -359,12 +394,59 @@ export default {
       console.log("woshinibababa")
     },
     windowScroll() {
+      // 获取视窗高度
+      var domHight = document.body.offsetHeight
       let scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
-      if (scrollTop > 3800) {
-        this.fixedimageChoose = this.image2
-      }else {
+      const yichongre = document.getElementById('yichongre')
+      const kunjing = document.getElementById('kunjing')
+      if(scrollTop < yichongre.offsetTop + domHight) {
+        // console.log('执行2000')
+        // this.mountedChart.option1 = true
         this.fixedimageChoose = this.image1
+      } else if(scrollTop < kunjing.offsetTop + domHight + 50) {
+        // console.log('fuzhi fuzhi')
+        this.fixedimageChoose = this.image2
+        // window.removeEventListener('scroll',)
+      } else {
+        this.fixedimageChoose = this.image3
       }
+
+      // dom滚动位置
+      // var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+      // 获取监听元素
+      var id
+      // 获取监听元素本身高度
+      var scrollHeight
+      // 获取监听元素距离视窗顶部距离
+      var offsetTop
+      // 获取监听元素距离顶部高度-窗口高度 
+      var top
+      // 元素距离底部的高度+元素本身高度
+      var bottom
+      id = document.getElementById(`id1`)
+      scrollHeight = id.scrollHeight
+      offsetTop = id.offsetTop
+      top = offsetTop - domHight / 2 > 0 ? offsetTop - domHight / 2 : 0
+      bottom = scrollHeight + offsetTop
+      // 页面滚动位置 > 元素距离顶部高度-窗口高度 && 页面滚动位置 < 元素距离顶部高度+元素本身高度
+      if(scrollTop >= top && scrollTop <= bottom) {
+        this.mountedChart.option1 = true
+      } else {
+        // console.log('元素不在了: ')
+      }
+      // this.list.map((i) => {
+      //   id = document.getElementById(`id${i}`)
+      //   scrollHeight = id.scrollHeight
+      //   offsetTop = id.offsetTop
+      //   top = offsetTop - domHight > 0 ? offsetTop - domHight : 0
+      //   bottom = scrollHeight + offsetTop
+      //   // 页面滚动位置 > 元素距离顶部高度-窗口高度 && 页面滚动位置 < 元素距离顶部高度+元素本身高度
+      //   if(scrollTop >= top && scrollTop <= bottom) {
+      //     console.log('元素出现在可视区: ' + i)
+      //   } else {
+      //     console.log('元素不在了: ' + i)
+      //   }
+      // })
     },
   }
 }

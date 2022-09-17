@@ -35,17 +35,37 @@ export default {
     chartId: {
       type: String,
       default: 'optionRn'
+    },
+    isMounted: {
+      type: Boolean,
+      default: false
     }
   },
   mounted () {
     console.log('jin ru mount')
     // 基于准备好的dom，初始化echarts实例
-    var myChart = echarts.init(document.getElementById(this.chartId))
+    this.myChart = echarts.init(document.getElementById(this.chartId))
     // 绘制图表
-    myChart.setOption(this.data)
+    // setTimeout(() => {
+    //   myChart.setOption(this.data)
+    // }, 2000)
+    // setTimeout(() => {
+    //   myChart.setOption(this.data)
+    // }, 5000)
+    
   }, 
   data () {
-    return {}
+    return {
+      myChart: null
+    }
+  },
+  watch: {
+    isMounted(newVal) {
+      if (newVal) {
+        console.log('图表变化次数')
+        this.myChart.setOption(this.data)
+      }
+    }
   }
 }
 </script>
@@ -59,7 +79,8 @@ export default {
 }
 .chart-container {
   width: 100%;
-  margin: 50px 0;
+  padding: 50px 0;
+  background-color: #cfd6c5;
   display: flex;
   justify-content: center;
   align-items: center;
