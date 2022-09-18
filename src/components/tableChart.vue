@@ -45,7 +45,7 @@ export default {
     console.log('jin ru mount')
     // 基于准备好的dom，初始化echarts实例
     this.myChart = echarts.init(document.getElementById(this.chartId))
-    // 绘制图表
+    // this.myChart.setOption(this.data)
     // setTimeout(() => {
     //   myChart.setOption(this.data)
     // }, 2000)
