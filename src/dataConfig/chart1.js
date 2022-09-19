@@ -143,7 +143,7 @@ const option = {
       }
     },
     legend: {
-      data: ['一线城市', '新一线城市', '二线城市', '港澳台地区', 'Temperature']
+      data: ['一线城市', '新一线城市', '二线城市', '港澳台地区', '异宠展数量']
     },
     xAxis: [
       {
@@ -238,7 +238,7 @@ const option = {
         ]
       },
       {
-        name: 'Temperature',
+        name: '异宠展数量',
         type: 'line',
         itemStyle: {
           color: '#4a4a3a'
