@@ -102,17 +102,17 @@
     
     <!-- 各类异宠主年龄在35-45的比例 -->
     <tableChartVue id="chart4" :data="chartData.option13" :chartId="'option13'" :isMounted="chartOption4" :title="'各类异宠主年龄在35-45的比例'"
-      :footer="'[数据来源：《艾瑞咨询：2021年中国宠物消费趋势白皮书》]'" :height="500" :width="90"></tableChartVue>
+      :footer="'[数据来源：《艾瑞咨询：2021年中国宠物消费趋势白皮书》]'" :height="500" :width="80"></tableChartVue>
     
     <tableChartVue id="chart5" :data="chartData.option31" :chartId="'option31'" :isMounted="chartOption5" :title="'异宠主年龄结构'"
-      :footer="'[数据来源：线上220份异宠玩家调查问卷]'" :height="600" :width="90"></tableChartVue>
+      :footer="'[数据来源：线上220份异宠玩家调查问卷]'" :height="500" :width="60"></tableChartVue>
 
     <!-- 各类异宠主为男性的比例 -->
     <tableChartVue id="chart6" :data="chartData.option14" :chartId="'option14'" :isMounted="chartOption6" :title="'各类异宠主为男性的比例'"
       :footer="'[数据来源：《艾瑞咨询：2021年中国宠物消费趋势白皮书》]'" :height="500" :width="90"></tableChartVue>
 
     <tableChartVue id="chart7" :data="chartData.option30" :chartId="'option30'" :isMounted="chartOption7" :title="'异宠主家庭月收入'"
-      :footer="'[数据来源：线上220份异宠玩家调查问卷]'" :height="700" :width="90"></tableChartVue>
+      :footer="'[数据来源：线上220份异宠玩家调查问卷]'" :height="400" :width="90"></tableChartVue>
 
     <tableChartVue id="chart8" :data="chartData.option27" :chartId="'option27'" :isMounted="chartOption8" :title="'异宠购买方式总览'"
       :footer="'[数据来源：《艾瑞咨询：2021年中国宠物消费趋势白皮书》]'" :height="500" :width="90"></tableChartVue>
@@ -188,14 +188,14 @@
     <tableChartVue id="chart10" :data="chartData.option21" :chartId="'option21'" :isMounted="chartOption10" :title="'视频内容主题观众感兴趣比例'"
       :footer="'[数据来源：《艾瑞咨询：2021年中国宠物消费趋势白皮书》]'" :height="500" :width="90"></tableChartVue>
     <tableChartVue id="chart11" :data="chartData.option23" :chartId="'option23'" :isMounted="chartOption11" :title="'微博萌宠红人做博主动机'"
-      :footer="'[数据来源：《艾瑞咨询：2021年中国宠物消费趋势白皮书》]'" :height="600" :width="90"></tableChartVue>
+      :footer="'[数据来源：《艾瑞咨询：2021年中国宠物消费趋势白皮书》]'" :height="400" :width="90"></tableChartVue>
     <tableChartVue id="chart12" :data="chartData.option20" :chartId="'option20'" :isMounted="chartOption12" :title="'知名博主粉丝数及点赞数'"
       :footer="'[数据来源：互联网人工搜集整合]'" :height="500" :width="90"></tableChartVue>
     <!-- 各类异宠b站视频播放量 -->
     <tableChartVue id="chart13" :data="chartData.option15" :chartId="'option15'" :isMounted="chartOption13" :title="'各类异宠b站视频播放量'"
       :footer="'[数据来源：互联网人工搜集整合]'" :height="500" :width="90"></tableChartVue>
     <tableChartVue id="chart14" :data="chartData.option25" :chartId="'option25'" :isMounted="chartOption14" :title="'销售平台各类异宠销售数据'"
-      :footer="'[数据来源：互联网人工搜集整合]'" :height="800" :width="90"></tableChartVue>
+      :footer="'[数据来源：互联网人工搜集整合]'" :height="500" :width="90"></tableChartVue>
 
     <div class="words-content-container">
       <div class="opcity-container-words">
@@ -240,7 +240,7 @@
     <tableChartVue id="chart18" :data="chartData.option5" :chartId="'option5'" :isMounted="chartOption18" :title="'不同级城市异宠医疗资源'"
       :footer="'[数据来源：百度地图、宠物行业观察]'" :height="500" :width="90"></tableChartVue>
     <tableChartVue id="chart19" :data="chartData.option28" :chartId="'option28'" :isMounted="chartOption19" :title="'异宠就医遇到的问题'"
-      :footer="'[数据来源：《南都民调：宠物消费调查报告（2022）》]'" :height="600" :width="90"></tableChartVue>
+      :footer="'[数据来源：《南都民调：宠物消费调查报告（2022）》]'" :height="300" :width="60"></tableChartVue>
     <!-- 各类异宠常患病症 -->
     <tableChartVue id="chart20" :data="chartData.option10" :chartId="'option10'" :isMounted="chartOption20" :title="'各类异宠常患病症'"
       :footer="'[数据来源：《异宠兽医：“病宠”千奇百怪，治疗无分贵贱》]'" :height="500" :width="90"></tableChartVue>
@@ -340,10 +340,10 @@
     <tableChartVue id="chart29" :data="chartData.option24" :chartId="'option24'" :isMounted="chartOption29" :title="'违法原因'"
       :footer="'[数据来源：中国裁判文书网关键字“异宠”]'" :height="800" :width="60"></tableChartVue>
     <tableChartVue id="chart30" :data="chartData.option26" :chartId="'option26'" :isMounted="chartOption30" :title="'异宠被弃养或走失情况(节点可以拖动)'"
-      :footer="'[数据来源：互联网人工搜集整合]'" :height="800" :width="90"></tableChartVue>
+      :footer="'[数据来源：互联网人工搜集整合]'" :height="500" :width="80"></tableChartVue>
 
     <tableChartVue id="chart31" :data="chartData.option29" :chartId="'option29'" :isMounted="chartOption31" :title="'异宠弃养放生后果'"
-      :footer="'[数据来源：互联网人工搜集整合]'" :height="800" :width="90"></tableChartVue>
+      :footer="'[数据来源：互联网人工搜集整合]'" :height="500" :width="80"></tableChartVue>
     <div class="introduction-header-footer" id="weisheng">
       <div class="section-title">
         <div class="title-words">尾声</div>

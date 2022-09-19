@@ -192,7 +192,7 @@ export default {
                 fontSize: 18
               },
               onclick:  ()=> {
-                this.myChart.setOption(option);
+                this.myChart.setOption(this.chartOptionData)
               }
             }
           ]

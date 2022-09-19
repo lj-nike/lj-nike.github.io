@@ -2691,7 +2691,7 @@ const option = {
       {
         name: 'Nightingale Chart',
         type: 'pie',
-        radius: [50, 250],
+        radius: [30, 150],
         center: ['50%', '50%'],
         roseType: 'area',
         itemStyle: {
@@ -3277,7 +3277,7 @@ const option = {
       {
         name: '年龄结构',
         type: 'pie',
-        radius: [50, 250],
+        radius: [30, 150],
         center: ['50%', '50%'],
         roseType: 'area',
         itemStyle: {
