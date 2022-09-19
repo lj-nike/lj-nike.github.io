@@ -188,7 +188,7 @@
     <tableChartVue id="chart10" :data="chartData.option21" :chartId="'option21'" :isMounted="chartOption10" :title="'视频内容主题观众感兴趣比例'"
       :footer="'[数据来源：《艾瑞咨询：2021年中国宠物消费趋势白皮书》]'" :height="500" :width="90"></tableChartVue>
     <tableChartVue id="chart11" :data="chartData.option23" :chartId="'option23'" :isMounted="chartOption11" :title="'微博萌宠红人做博主动机'"
-      :footer="'[数据来源：《艾瑞咨询：2021年中国宠物消费趋势白皮书》]'" :height="400" :width="90"></tableChartVue>
+      :footer="'[数据来源：《艾瑞咨询：2021年中国宠物消费趋势白皮书》]'" :height="500" :width="90"></tableChartVue>
     <tableChartVue id="chart12" :data="chartData.option20" :chartId="'option20'" :isMounted="chartOption12" :title="'知名博主粉丝数及点赞数'"
       :footer="'[数据来源：互联网人工搜集整合]'" :height="500" :width="90"></tableChartVue>
     <!-- 各类异宠b站视频播放量 -->
@@ -240,7 +240,7 @@
     <tableChartVue id="chart18" :data="chartData.option5" :chartId="'option5'" :isMounted="chartOption18" :title="'不同级城市异宠医疗资源'"
       :footer="'[数据来源：百度地图、宠物行业观察]'" :height="500" :width="90"></tableChartVue>
     <tableChartVue id="chart19" :data="chartData.option28" :chartId="'option28'" :isMounted="chartOption19" :title="'异宠就医遇到的问题'"
-      :footer="'[数据来源：《南都民调：宠物消费调查报告（2022）》]'" :height="300" :width="60"></tableChartVue>
+      :footer="'[数据来源：《南都民调：宠物消费调查报告（2022）》]'" :height="400" :width="60" :isClick="true" @showchartdetailinfo="showChartDetailInfo"></tableChartVue>
     <!-- 各类异宠常患病症 -->
     <tableChartVue id="chart20" :data="chartData.option10" :chartId="'option10'" :isMounted="chartOption20" :title="'各类异宠常患病症'"
       :footer="'[数据来源：《异宠兽医：“病宠”千奇百怪，治疗无分贵贱》]'" :height="500" :width="90"></tableChartVue>
@@ -336,14 +336,14 @@
     </div>
     <!-- 非法售卖走私野生异宠 -->
     <tableChartVue id="chart28" :data="chartData.option9" :chartId="'option9'" :isMounted="chartOption28" :title="'非法售卖走私野生异宠(点击查看详情)'"
-      :footer="'[数据来源：中国裁判文书网关键字“异宠”]'" :height="500" :width="90"></tableChartVue>
+      :footer="'[数据来源：中国裁判文书网关键字“异宠”]'" :height="500" :width="90" :isClick="true" @showchartdetailinfo="showChartDetailInfo"></tableChartVue>
     <tableChartVue id="chart29" :data="chartData.option24" :chartId="'option24'" :isMounted="chartOption29" :title="'违法原因'"
       :footer="'[数据来源：中国裁判文书网关键字“异宠”]'" :height="800" :width="60"></tableChartVue>
     <tableChartVue id="chart30" :data="chartData.option26" :chartId="'option26'" :isMounted="chartOption30" :title="'异宠被弃养或走失情况(节点可以拖动)'"
       :footer="'[数据来源：互联网人工搜集整合]'" :height="500" :width="80"></tableChartVue>
 
     <tableChartVue id="chart31" :data="chartData.option29" :chartId="'option29'" :isMounted="chartOption31" :title="'异宠弃养放生后果'"
-      :footer="'[数据来源：互联网人工搜集整合]'" :height="500" :width="80"></tableChartVue>
+      :footer="'[数据来源：互联网人工搜集整合]'" :height="500" :width="80" :isClick="true" @showchartdetailinfo="showChartDetailInfo"></tableChartVue>
     <div class="introduction-header-footer" id="weisheng">
       <div class="section-title">
         <div class="title-words">尾声</div>
@@ -417,6 +417,35 @@
           font-size:20rpx;
         }">▲</div>
     </el-backtop>
+    <el-dialog
+      class="dialog-style"
+      :visible.sync="dialogVisible"
+      width="60%" :center="true" top="45vh">
+      <span>{{dialogWords}}</span>
+    </el-dialog>
+    <el-dialog
+      class="dialog-style"
+      :visible.sync="dialogVisible2"
+      width="60%" :center="true" top="30vh">
+      <el-row :gutter="50">
+        <el-col :span="12">
+          <p>2020年包括猫狗宠物医疗花费</p>
+          <p>200元以下：21.24%</p>
+          <p>201-500元：32.79%</p>
+          <p>501-1000元：27.94%</p>
+          <p>1001-2000元：11.09%</p>
+          <p>2001元及以上：6.93%</p>
+        </el-col>
+        <el-col :span="12">
+          <p>2021年包括猫狗宠物医疗花费</p>
+          <p>200元以下：5.38%</p>
+          <p>201-500元：18.7%</p>
+          <p>501-1000元：37.96%</p>
+          <p>1001-2000元：25.59%</p>
+          <p>2001元及以上：12.37%</p>
+        </el-col>
+      </el-row>
+    </el-dialog>
   </div>
 </template>
 
@@ -460,6 +489,9 @@
     },
     data() {
       return {
+        dialogVisible: false,
+        dialogVisible2: false,
+        dialogWords: '',
         mis: 'liaojie',
         value: '',
         fixedimageChoose: require('./assets/1.jpeg'),
@@ -589,6 +621,18 @@
           
         // }).filter(el => )
       },
+      showChartDetailInfo (chartid) {
+        if (chartid === 'option28') {
+          this.dialogVisible2 = true
+        }else if(chartid === 'option9') {
+          this.dialogWords = '《刑法》第341条：非法猎捕、杀害国家重点保护的珍贵、濒危野生动物的，或者非法收购、运输、出售国家重点保护的珍贵、濒危野生动物及其制品的，处五年以下有期徒刑或者拘役，并处罚金；情节严重的，处五年以上十年以下有期徒刑，并处罚金；情节特别严重的，处十年以上有期徒刑，并处罚金或者没收财产。'
+          this.dialogVisible = true
+        }else {
+          this.dialogWords = '《中华人民共和国新法修正案（十一）：违反国家规定，非法引进、释放或者丢弃外来入侵物种，情节严重的，处三年以下有期徒刑或者拘役，并处或者单处罚金。'
+          this.dialogVisible = true
+        }
+        console.log(chartid)
+      }
     }
   }
   </script>

@@ -39,6 +39,10 @@ export default {
     isMounted: {
       type: Boolean,
       default: false
+    },
+    isClick: {
+      type: Boolean,
+      default: false
     }
   },
   mounted () {
@@ -64,6 +68,12 @@ export default {
       if (newVal) {
         console.log('图表变化次数')
         this.myChart.setOption(this.data)
+        if (this.isClick) {
+          this.myChart.on('click', () => {
+            console.log('进入点击事件')
+            this.$emit('showchartdetailinfo', this.chartId)
+          })
+        }
       }
     }
   }

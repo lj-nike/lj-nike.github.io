@@ -2716,7 +2716,7 @@ const option = {
     series: {
       type: 'sankey',
       layout: 'none',
-      right: '5%',
+      right: '10%',
       emphasis: {
         focus: 'adjacency'
       },
