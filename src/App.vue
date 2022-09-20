@@ -167,17 +167,16 @@
           <span class="introduction-special-words">热度占5%—15%。</span>
           人工搜集各平台<span class="introduction-special-words">185位博主</span>发现，
           每类博主粉丝量以及关于异宠视频点赞量居于<span class="introduction-special-words">前10</span>的<span class="introduction-special-words"></span>均在百万千万级以上，他们有着不可忽视的
-          <span class="introduction-special-words"></span>影响力，但其中仅有 42位发布内容具有科普性和学习价值。
-          <span class="introduction-special-words">仅有42位发布内容具有科普性，</span>
+          <span class="introduction-special-words">影响力，但其中仅有42位发布内容具有科普性和学习价值。</span>
           数据表明有<span class="introduction-special-words">62.5%</span>的异宠、宠物博主布视频的真实目的为<span
             class="introduction-special-words">获得大量粉丝求得关注</span>。
           同时各大销售平台售卖异宠的价格在<span class="introduction-special-words">一元至百万元</span>之间相差悬殊。
-          而“异宠”检索记录最高可达<span class="introduction-special-words"></span>270000条，大量泥沙俱下的信息带来的繁琐筛选工作
-          <span class="introduction-special-words"></span>形成了人与异宠的新屏障，
-          但同时也推进着人类对异宠的深入了解。此外各平台没有对购买人群有年龄的限制与监督，
-          网络传播有关异宠的内容鱼龙混杂，<span class="introduction-special-words"></span>未成年人好奇心使然尚未对购买的宠物有详细的了解，
-          47%的异宠初次购买者<span class="introduction-special-words"></span>几乎没有花时间研究所购买的动物，而我国仅有<span class="introduction-special-words"></span>52%的饲养者意识到自己饲养的是异宠。
-          <span class="introduction-special-words"></span>异宠主囿于人数劣势，异宠相关数据繁杂，异宠本身信息少，被迫陷入了“孤岛”困境。
+          而“异宠”检索记录最高可达<span class="introduction-special-words">270000条</span>，大量泥沙俱下的信息带来的繁琐筛选工作
+          <span class="introduction-special-words">形成了人与异宠的新屏障，
+          但同时也推进着人类对异宠的深入了解</span>。此外各平台没有对购买人群有年龄的限制与监督，
+          网络传播有关异宠的内容鱼龙混杂，<span class="introduction-special-words">未成年人好奇心使然尚未对购买的宠物有详细的了解，
+          47%</span>的异宠初次购买者<span class="introduction-special-words">几乎没有花时间研究所购买的动物</span>，而我国仅有<span class="introduction-special-words">52%</span>的饲养者意识到自己饲养的是异宠。
+          <span class="introduction-special-words">异宠主囿于人数劣势，异宠相关数据繁杂，异宠本身信息少，被迫陷入了“孤岛”困境。</span>
         </div>
       </div>
     </div>
@@ -194,7 +193,7 @@
     <!-- 各类异宠b站视频播放量 -->
     <tableChartVue id="chart13" :data="chartData.option15" :chartId="'option15'" :isMounted="chartOption13" :title="'各类异宠b站视频播放量'"
       :footer="'[数据来源：互联网人工搜集整合]'" :height="500" :width="90"></tableChartVue>
-    <tableChartVue id="chart14" :data="chartData.option25" :chartId="'option25'" :isMounted="chartOption14" :title="'销售平台各类异宠销售数据'"
+    <tableChartVue id="chart14" :data="chartData.option25" :chartId="'option25'" :isMounted="chartOption14" :title="'销售平台各类异宠销售数据(点击图例切换)'"
       :footer="'[数据来源：互联网人工搜集整合]'" :height="500" :width="90"></tableChartVue>
 
     <div class="words-content-container">
