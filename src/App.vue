@@ -9,7 +9,7 @@
         <a href="#yinyan">引言</a>
         <a href="#yichongre">Z世代的异宠热</a>
         <a href="#kunjing">陷入孤岛的困境</a>
-        <a href="#shangtong">互相伤害后的伤痛</a>
+        <a href="#shangtong">互相伤害后的呜咽</a>
         <a href="#weisheng">尾声</a>
       </div>
       <div class="opcity-container">
@@ -284,7 +284,7 @@
     <!--  -->
     <div class="introduction" id="shangtong">
       <div class="section-title">
-        <div class="title-words">互相伤害后的伤痛</div>
+        <div class="title-words">互相伤害后的呜咽</div>
         <div class="title-border"></div>
         <div class="explain-words">
           <span>“陕西省一女大学生网购银环蛇后被咬，隐瞒伤情六天后去世”</span>
@@ -325,19 +325,24 @@
         <!-- <div class="fix-nail"></div> -->
         <div class="introduction-words">
           异宠市场异军突起，市场需求量急剧扩大。<span class="introduction-special-words">跨国商业空运和全球网络互联</span>，这两个因素从供需两方面刺激了异宠贸易， 
-          导致处在供应链的商家铤而走险违法贩卖国家保护动物。<span class="introduction-special-words">2022年一季度，全国海关共截获检疫性有害生物173种，13900次</span>，
+          导致处在供应链的商家铤而走险违法贩卖国家保护动物。
+          <span class="introduction-special-words"></span>人工搜索中国裁判文书网110起有关异宠犯罪案件发现，涉案异宠为
+          <span class="introduction-special-words">国家二级保护动物有4470件，有98起违法原因为盈利谋私。2022年一季度，全国海关共截获检疫性有害生物173种，13900次</span>，
           甚至我国是世界上遭受外来物种入侵最严重的国家之一，<span class="introduction-special-words">截止2020年，已知的入侵物种高达660余种</span>，以西南和沿海地区最为严重。
           违法供应的背后是消费者看不见的血泪，异宠在野外被捕获后<span class="introduction-special-words">死亡率高达90%</span>，即使活下来也可能面临
           <span class="introduction-special-words">终身慢性疾病</span>的折磨，
           而<span class="introduction-special-words">人工繁殖</span>出的动物在运输、繁殖、圈养各阶段它们都可能承受巨大痛苦：生存空间狭小、环境恶劣、
           至少<span class="introduction-special-words">75%两栖爬宠在人工饲养环境下生存不过一年</span>、强迫连续受孕、跨种群配种等。
           同时<span class="introduction-special-words">放生或被遗弃的异宠可能会造成物种入侵，破坏当地生态链</span>，贻害无穷。
-          由于<span class="introduction-special-words">购买成本小，异宠体型小，发现概率小，救助站少</span>，异宠主对抛弃行为不会轻易付出代价。
-          据北京市野生动物救护中心提供的数据表示，仅2020年3月份以来，该救护中心就已经接收到遗弃、走失、执法机关罚没、
-          以及市民主动送交的<span class="introduction-special-words">各类“异宠”23种近50只</span>。面对这些险象，麦克维尔指出，应当
-          <span class="introduction-special-words">开展异宠贸易和养殖现状调查，
-          全面评估异宠贸易对公众健康、动物福利、野生种群以及本土生态系统的影响，完善异宠饲养的规范和管理体系。
-          加强公众宣传，指导公众了解异宠贸易带来的动物福利问题及健康、生态风险。</span>
+          <div style="width: 100%;text-indent: 60px;">
+            由于<span class="introduction-special-words">购买成本小，异宠体型小，发现概率小，救助站少</span>，异宠主对抛弃行为不会轻易付出代价。
+            据北京市野生动物救护中心提供的数据表示，仅2020年3月份以来，该救护中心就已经接收到遗弃、走失、执法机关罚没、
+            以及市民主动送交的<span class="introduction-special-words">各类“异宠”23种近50只</span>。面对这些险象，麦克维尔指出，应当
+            <span class="introduction-special-words">开展异宠贸易和养殖现状调查，
+            全面评估异宠贸易对公众健康、动物福利、野生种群以及本土生态系统的影响，完善异宠饲养的规范和管理体系。
+            加强公众宣传，指导公众了解异宠贸易带来的动物福利问题及健康、生态风险。</span>
+          </div>
+          
         </div>
       </div>
     </div>
@@ -371,10 +376,13 @@
           褪去浮华后总会有这样一个问题：在金钱的驱使下会不会有更多的物种成为“异类”，成为人类驯化的宠物，成为人类身份的象征？此篇以异宠主画像、异宠市场的乱象、异宠饲养方式的优劣切入，
           重点关注<span class="introduction-special-words">人类在对异宠认知信息较为匮乏片面，智力有着极端优势的情况下，与异宠应该保持怎样的“饲养”关系</span>。<br>
           <div style="width: 100%;text-indent: 60px;">
-            地球的年龄是46亿年，而人类文明不过300万年，在漫长的40多亿年中，一直有其他生灵生存于此，我们并不是主人只是地球的居客。
-            作为当今最智慧的物种，我们目前能做的仅是去敦促异宠饲养相关法律准则的完善；去不断了解，只有充分的了解，
-            丰富的知识基础我们才能客观冷静，主动敞开爱意的双臂；去包容合法的异宠圈的存在，也包容部分人类对其的恐惧与厌恶；
-            去尊重异宠主的热爱，<span class="introduction-special-words">更重要的是尊重异宠，尊重生命本身</span>。
+            地球的年龄是46亿年，而人类文明不过300万年，我们依然在了解那剩余的漫长岁月中，
+            其他生物的生命轨迹和生活习性。而作为当今最智慧的物种，我们目前能做的仅是去
+            <span class="introduction-special-words">
+            敦促异宠饲养以及异宠相关产业法律准则的完善；
+            去包容合法异宠圈的存在，也包容部分人类对其的恐惧与厌恶；去不断了解，只有充分的了解，丰富的知识基础我们才能客观冷静，
+            主动敞开爱意的双臂；去合理善待异宠、宠物、动物，尊重异宠主的热爱，更重要的是尊重异宠，尊重生命本身。
+            </span>
           </div>
           <div style="width: 100%;text-indent: 60px;">
             人类社会应当是有规则的，不是随性而为，不是暴力、背叛、屠戮，我们要维护一条道德的底线，那条底线是对生命的尊重与敬畏，
@@ -397,7 +405,7 @@
         <ul>
           <li class="ref-title">参考文献：</li>
           <li>【1】《浅谈宠物行业存在的问题》</li>
-          <li>【2】《狂野之心：异于宠物贸易的残酷现状》</li>
+          <li>【2】《狂野之心：异域宠物贸易的残酷现状》</li>
           <li>【3】《2017-2021年宠物行业白皮书》</li>
           <li>【4】《2017-2021年宠物医疗白皮书》</li>
           <li>【5】《艾瑞咨询：2021年中国宠物消费趋势白皮书》</li>
