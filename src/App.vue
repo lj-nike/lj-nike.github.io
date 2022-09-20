@@ -82,7 +82,7 @@
           饲养者为主力军共占<span class="introduction-special-words">84.6%,</span>家庭月收入在5000—10000元有30.8%,
           <span class="introduction-special-words">男性</span>的比率<span
             class="introduction-special-words">超过半数</span>且集中分布在
-          <span class="introduction-special-words">一线城市以及新一线城市，</span>这表明异宠主仍是小众群体。
+          <span class="introduction-special-words">一线城市以及新一线城市，</span>这表明饲养异宠的是年轻，有一定经济能力，在较发达城市有开放视野和思想的小众群体。
         </div>
       </div>
     </div>
@@ -166,13 +166,18 @@
           浓厚的猎奇心理是青年的标志，这也导致异宠饲养主年龄趋于低龄。在鼓励他们通过饲养异宠学习知识的同时，还应当谨慎网络和各大平台错误虚假信息的误导。数据显示异宠在平台的
           <span class="introduction-special-words">热度占5%—15%。</span>
           人工搜集各平台<span class="introduction-special-words">185位博主</span>发现，
+          每类博主粉丝量以及关于异宠视频点赞量居于<span class="introduction-special-words">前10</span>的<span class="introduction-special-words"></span>均在百万千万级以上，他们有着不可忽视的
+          <span class="introduction-special-words"></span>影响力，但其中仅有 42位发布内容具有科普性和学习价值。
           <span class="introduction-special-words">仅有42位发布内容具有科普性，</span>
           数据表明有<span class="introduction-special-words">62.5%</span>的异宠、宠物博主布视频的真实目的为<span
-            class="introduction-special-words">变现</span>。
-          同时各大销售平台售卖异宠的价格在<span class="introduction-special-words">一元至百万元</span>之间并且没有对购买人群有年龄的限制与监督。网络传播有关异宠的内容鱼龙混杂，
-          <span class="introduction-special-words">未成年人好奇心使然尚未对购买的宠物有详细的了解，47%</span>的异宠初次购买者几乎没有花时间研究所购买的动物，
-          而我国仅有<span class="introduction-special-words">52%</span>的饲养者意识到自己饲养的是异宠。
-          <span class="introduction-special-words">异宠主囿于人数劣势，相关信息少，被迫陷入了“孤岛”困境。</span>
+            class="introduction-special-words">获得大量粉丝求得关注</span>。
+          同时各大销售平台售卖异宠的价格在<span class="introduction-special-words">一元至百万元</span>之间相差悬殊。
+          而“异宠”检索记录最高可达<span class="introduction-special-words"></span>270000条，大量泥沙俱下的信息带来的繁琐筛选工作
+          <span class="introduction-special-words"></span>形成了人与异宠的新屏障，
+          但同时也推进着人类对异宠的深入了解。此外各平台没有对购买人群有年龄的限制与监督，
+          网络传播有关异宠的内容鱼龙混杂，<span class="introduction-special-words"></span>未成年人好奇心使然尚未对购买的宠物有详细的了解，
+          47%的异宠初次购买者<span class="introduction-special-words"></span>几乎没有花时间研究所购买的动物，而我国仅有<span class="introduction-special-words"></span>52%的饲养者意识到自己饲养的是异宠。
+          <span class="introduction-special-words"></span>异宠主囿于人数劣势，异宠相关数据繁杂，异宠本身信息少，被迫陷入了“孤岛”困境。
         </div>
       </div>
     </div>
@@ -279,7 +284,7 @@
     <!--  -->
     <div class="introduction" id="shangtong">
       <div class="section-title">
-        <div class="title-words">互相伤害后的呜咽</div>
+        <div class="title-words">互相伤害后的伤痛</div>
         <div class="title-border"></div>
         <div class="explain-words">
           <span>“陕西省一女大学生网购银环蛇后被咬，隐瞒伤情六天后去世”</span>
@@ -361,9 +366,10 @@
         <!-- <div class="fix-nail"></div> -->
         <div class="introduction-words">
           异宠市场的迅速崛起可能源于人类的猎奇心理，个性化心里的需求，养成的满足感或者来自于
-          <span class="introduction-special-words">人类原始的征服欲望</span>。
-          而异宠饲养揭开了人类与其他物种美好共处的遮羞布，血淋淋的真相便是鲜少有人会去真的热爱尊重，大多则是被名誉利益诱引。
-          褪去浮华后总会有这样一个问题：在金钱的驱使下会不会有更多的物种成为“异类”，成为人类驯化的宠物，成为人类身份的象征？<br>
+          <span class="introduction-special-words">人类原始的征服欲望。饲养异宠的人可能希望花费较少的互动以及情感培养时间，通过类似单向的情感输出获得并不处于同等需要的陪伴和依赖感</span>。
+          而异宠饲养揭开了人类与其他物种美好共处的遮羞布，血淋淋的真相便是<span class="introduction-special-words">鲜少有人会去真的热爱尊重，大多则是被名誉利益诱引</span>。
+          褪去浮华后总会有这样一个问题：在金钱的驱使下会不会有更多的物种成为“异类”，成为人类驯化的宠物，成为人类身份的象征？此篇以异宠主画像、异宠市场的乱象、异宠饲养方式的优劣切入，
+          重点关注<span class="introduction-special-words">人类在对异宠认知信息较为匮乏片面，智力有着极端优势的情况下，与异宠应该保持怎样的“饲养”关系</span>。<br>
           <div style="width: 100%;text-indent: 60px;">
             地球的年龄是46亿年，而人类文明不过300万年，在漫长的40多亿年中，一直有其他生灵生存于此，我们并不是主人只是地球的居客。
             作为当今最智慧的物种，我们目前能做的仅是去敦促异宠饲养相关法律准则的完善；去不断了解，只有充分的了解，
@@ -371,9 +377,10 @@
             去尊重异宠主的热爱，<span class="introduction-special-words">更重要的是尊重异宠，尊重生命本身</span>。
           </div>
           <div style="width: 100%;text-indent: 60px;">
-            人类社会应当是有规则的，不是随性而为，不是暴力、背叛、屠戮，我们要维护一条道德的底线，那条底线是对生命的尊重与敬畏。
-            <span class="introduction-special-words">我们所想的乌托邦世界是：宇宙中任何物种之间都不存在饲养关系，每一种生物都能和谐自由地享受生命，
-              真正的爱，是生命对生命的。即使道途漫长且不可到达，我们仍需努力地无限趋近于此</span>。
+            人类社会应当是有规则的，不是随性而为，不是暴力、背叛、屠戮，我们要维护一条道德的底线，那条底线是对生命的尊重与敬畏，
+            人类凭借独有的智慧与博爱不应成为矛盾的激化者，而应成为自然的调和者。
+            <span class="introduction-special-words">我们所想的乌托邦世界是：宇宙中任何物种之间都不存在饲养关系，
+              每一种动植物都能和谐自由地享受生命，真正的爱，是生命对生命的。即使通往乌托邦的道途漫长且终点不可及，但我们仍需努力地无限趋近于此。</span>。
           </div>
         </div>
       </div>
